@@ -6,10 +6,13 @@ source 'http://rubygems.org'
 
 gem 'rails','=3.1.1'
 #gem 'rails','>=3.0.0'
+gem 'postgres-pr'
+gem 'pg'
+gem 'heroku'
 
 #gem 'mysql2'
 group :development do
-  gem 'mysql2',">0.3"
+  gem 'pg'
 end
 
 group :production do
@@ -44,8 +47,8 @@ end
 gem "devise"
 gem "cancan"
 gem "jquery-rails"
-#gem "rspec-rails", ">= 2.0.1", :group => [:development, :test]
-#gem "capybara", :group => [:development, :test]
-#gem 'twitter-bootstrap-rails', :git => 'http://github.com/seyhunak/twitter-bootstrap-rails.git'
+gem "rspec-rails", ">= 2.0.1", :group => [:development, :test]
+gem "capybara", :group => [:development, :test]
+gem 'twitter-bootstrap-rails', :git => 'http://github.com/seyhunak/twitter-bootstrap-rails.git'
 
 
